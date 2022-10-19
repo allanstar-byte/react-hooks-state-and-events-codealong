@@ -1,5 +1,5 @@
-import React from "react";
-import react, { useState } from "react";
+import React from 'react'
+import react, { useState } from 'react'
 
 // function Toggle() {
 //     const [isOn, setIsOn] = useState(false);
@@ -19,29 +19,28 @@ import react, { useState } from "react";
 //     // } < /button>;
 // }
 
-
 function Toggle() {
-    const [isOff, setIsOn] = useState(true);
+  const [isOff, setIsOn] = useState(true)
 
-    function handleClick() {
-        setIsOn(!isOff);
-    }
+  function handleClick() {
+    setIsOn(!isOff)
+  }
 
-    const color = isOff ? "white" : "red";
+  const color = isOff ? 'white' : 'red'
 
-    return <button style = {
-        { background: color }
-    }
-    onClick = { handleClick } > { isOff ? "ON" : "OFF" } <
-        /button>
+  return (
+    <button style={{ background: color }} onClick={handleClick}>
+      {' '}
+      {isOff ? 'WAH' : 'Wuueh'}{' '}
+    </button>
+  )
 
-
-    // return <button onClick = { handleClick } > {
-    //     if (isOn) {
-    //         return ("ON")
-    //     } else {
-    //         "OFF"
-    //     }
-    // } < /button>;
+  // return <button onClick = { handleClick } > {
+  //     if (isOn) {
+  //         return ("ON")
+  //     } else {
+  //         "OFF"
+  //     }
+  // } < /button>;
 }
-export default Toggle;
+export default Toggle
